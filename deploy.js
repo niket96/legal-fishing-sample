@@ -2,6 +2,7 @@ const rp = require('request-promise')
 const config = require('./flureeConfig.json')
 const schema = require('./resources/schema.json')
 const seedData = require('./resources/seed.json')
+
 //create a blank db
 async function newDb() {
     let reqOptions = {
@@ -37,20 +38,26 @@ async function seed() {
 }
 
 async function deploy() {
-    await newDb()
     try {
-        await dbSchema()
-        if (seedData) {
-            await seed()
-        }
+        await newDb()
+        setTimeout(async function () {
+            await dbSchema()
+            if (seedData) {
+                await seed()
+            }
+        }, 5000)
+
     } catch (error) {
         if (error.message.indexOf('The database does not exist within this ledger group') == -1) {
             throw error
         }
-        await dbSchema()
-        if (seedData) {
-            await seed()
-        }
+        // while (error.message.indexOf('The database does not exist within this ledger group')) {
+        //     await dbSchema()
+        //     if (seedData) {
+        //         await seed()
+        //     }
+        // }
+
     }
 
 }
