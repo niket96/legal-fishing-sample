@@ -1,15 +1,12 @@
 version: "2.0"
 
-services: 
-    legal-fishing:
-        build: 
-            context: ./
-            dockerfile: ./Dockerfile
-        container_name: knowledge-proof
-        expose: 
-            - 3000
-        ports: 
-            - "3000:3000"
-        command: |
-            bash -c "npm start && node deploy.js"
-        network_mode: host
+server: 
+    image: legal-fishing
+    container_name: knowledge-proof
+    expose: 
+        - 3000
+    ports: 
+        - "3000:3000"
+    command: |
+        bash -c "npm start && node deploy.js"
+    network_mode: host
