@@ -1,12 +1,15 @@
 version: "2.0"
 
-server: 
-    image: legal-fishing
-    container_name: knowledge-proof
-    expose: 
-        - 3000
-    ports: 
-        - "3000:3000"
-    command: |
-        bash -c "npm start && node deploy.js"
-    network_mode: host
+services: 
+    legal-fishing:
+        image: legalfishing_legal-fishing
+        container_name: knowledge-proof
+        volumes: 
+            - ./flureeConfig.json:/tmp/flureeConfig.json
+        expose: 
+            - 3000
+        ports: 
+            - "3000:3000"
+        command: |
+            bash -c "npm start && node deploy.js"
+        network_mode: host
