@@ -2,7 +2,7 @@ version: "2.0"
 
 services: 
     legal-fishing:
-        image: legalfishing_legal-fishing
+        image: legal-fishing
         container_name: knowledge-proof
         volumes: 
             - ./flureeConfig.json:/tmp/flureeConfig.json
