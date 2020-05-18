@@ -5,6 +5,7 @@ services:
         build: 
             context: ./
             dockerfile: ./Dockerfile
+        image: legal-fishing
         container_name: knowledge-proof
         expose: 
             - 3000
