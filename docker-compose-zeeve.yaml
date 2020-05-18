@@ -1,7 +1,7 @@
 version: "2.0"
 
 services: 
-    legal-fishing:
+    legalfishing:
         image: legal-fishing
         container_name: knowledge-proof
         volumes: 
