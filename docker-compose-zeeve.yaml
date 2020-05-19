@@ -6,7 +6,7 @@ services:
         container_name: knowledge-proof
         volumes: 
 #             - /tmp/flureeConfig.json:./flureeConfig.json
-            -/var/zeeve-app:/usr/src/legal/build
+            - /var/zeeve-app:/usr/src/legal/build
         expose: 
             - 3000
         ports: 
