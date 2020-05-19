@@ -8,7 +8,7 @@ function gateway(ip) {
     return "https://db.flur.ee";
   } 
   else if (hosted) {
-    return "http://localhost:8080"
+    return "http://localhost:8081"
   } else if (!hosted){
     return ip;
   }

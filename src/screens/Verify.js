@@ -67,7 +67,7 @@ class Verify extends Component {
 
     componentDidMount(){
         flureeFetch({
-            "ip": "http://localhost:8080", 
+            "ip": "http://localhost:8081", 
             "network": "legal", 
             "db": "fishing",
             "endpoint": "query",

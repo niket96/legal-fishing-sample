@@ -32,7 +32,7 @@ class Main extends Component {
         <Row>
           <Col xs={12}>
             <Alert variant="info">
-                Make sure the database `legal/fishing` is running on `http://localhost:8080`, and that this database contains both the schema and the necessary items in snarkConfig (see the `seed` folder).
+                Make sure the database `legal/fishing` is running on `http://localhost:8081`, and that this database contains both the schema and the necessary items in snarkConfig (see the `seed` folder).
               </Alert>
           </Col>
         </Row>

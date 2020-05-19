@@ -20,7 +20,7 @@ Features demonstrated: zero knowledge proofs, data immutability, and traceabilit
 
 Download and unzip this [Fluree packet](https://fluree-examples.s3.amazonaws.com/fluree-zero-knowledge-packet.zip). The packet contains Fluree, version 0.13.0, as well as a prepopulated database with the schema, seed data, and several example proofs (`resources/schema.json` and `resources/seed.json` have the schema and seed transaction, respectively).
 
-Navigate to the folder where you downloaded the packet, and run `./fluree_start.sh`. If you have Java 8+ installed, this should launch Fluree, and a Admin Console will be available for you to explore at `http://localhost:8080`. `resources/example_queries.js` has example queries you can test out directly in the Admin Console.
+Navigate to the folder where you downloaded the packet, and run `./fluree_start.sh`. If you have Java 8+ installed, this should launch Fluree, and a Admin Console will be available for you to explore at `http://localhost:8081`. `resources/example_queries.js` has example queries you can test out directly in the Admin Console.
 
 2. `Start the App`
 
