@@ -12,5 +12,5 @@ services:
         ports: 
             - "3000:3000"
         command: |
-            bash -c "node deploy.js && npm run build && npm start"
+            bash -c "npm run build && node deploy.js && npm start"
         network_mode: host
