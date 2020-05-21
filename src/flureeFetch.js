@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-fetch';
-
+import config from './flureeConfig.json';
 function gateway(ip) {
   let hosted = process.env.REACT_APP_ENVIRONMENT === "hosted";
   let production = process.env.NODE_ENV === "production";
@@ -8,7 +8,7 @@ function gateway(ip) {
     return "https://db.flur.ee";
   } 
   else if (hosted) {
-    return "http://localhost:8081"
+    return `${config.ip}:${config.port}`
   } else if (!hosted){
     return ip;
   }

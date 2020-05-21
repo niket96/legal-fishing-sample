@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { flureeFetch } from '../flureeFetch';
 import { Alert, Button, Table } from 'react-bootstrap';
 import  zkSnark from 'snarkjs';
+import config from '../flureeConfig.json';
 
 function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
@@ -67,7 +68,7 @@ class Verify extends Component {
 
     componentDidMount(){
         flureeFetch({
-            "ip": "http://localhost:8081", 
+            "ip": `${config.ip}:${config.port}`, 
             "network": "legal", 
             "db": "fishing",
             "endpoint": "query",

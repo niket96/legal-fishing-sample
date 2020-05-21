@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col, Form, Alert, Button } from 'react-bootstrap';
 import interact from 'interactjs';
 import  zkSnark from 'snarkjs';
+import config from '../flureeConfig.json';
 
 import {flureeFetch} from '../flureeFetch'
 
@@ -165,7 +166,7 @@ class GenerateProof extends Component {
       let maxLat = this.props.topLeftY + this.props.height > 100 ? 100 : this.props.topLeftY + this.props.height;
   
       flureeFetch({
-        "ip": "http://localhost:8081", 
+        "ip": `${config.ip}:${config.port}`, 
         "network": "legal", 
         "db": "fishing",
         "endpoint": "query",
@@ -212,7 +213,7 @@ class GenerateProof extends Component {
       }]
   
       flureeFetch({
-        "ip": "http://localhost:8081", 
+        "ip": `${config.ip}:${config.port}`, 
         "network": "legal", 
         "db": "fishing",
         "endpoint": "transact",
