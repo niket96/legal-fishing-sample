@@ -5,7 +5,7 @@ services:
         image: legal-fishing
         container_name: knowledge-proof
         volumes: 
-#             - /tmp/flureeConfig.json:./flureeConfig.json
+            - /tmp/flureeConfig.json:/usr/src/legal/src/flureeConfig.json
             - /var/zeeve-app:/usr/src/legal/build
         expose: 
             - 3000
