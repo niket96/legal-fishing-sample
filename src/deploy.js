@@ -1,7 +1,7 @@
 const rp = require('request-promise')
 const config = require('./flureeConfig.json')
-const schema = require('./resources/schema.json')
-const seedData = require('./resources/seed.json')
+const schema = require('../resources/schema.json')
+const seedData = require('../resources/seed.json')
 
 //create a blank db
 async function newDb() {
