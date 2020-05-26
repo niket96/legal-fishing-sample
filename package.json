@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "circomlib": "0.0.20",
+    "http-proxy-middleware": "^1.0.4",
     "interactjs": "^1.7.3",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.12.0",
