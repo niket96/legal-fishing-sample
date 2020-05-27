@@ -166,7 +166,7 @@ class GenerateProof extends Component {
       let maxLat = this.props.topLeftY + this.props.height > 100 ? 100 : this.props.topLeftY + this.props.height;
   
       flureeFetch({
-        "ip": `${config.ip}:${config.port}`, 
+        "ip": `${config.ip}`, 
         "network": "legal", 
         "db": "fishing",
         "endpoint": "query",
