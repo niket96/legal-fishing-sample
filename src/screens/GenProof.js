@@ -213,7 +213,7 @@ class GenerateProof extends Component {
       }]
   
       flureeFetch({
-        "ip": `${config.ip}:${config.port}`, 
+        "ip": `${config.ip}`, 
         "network": "legal", 
         "db": "fishing",
         "endpoint": "transact",
