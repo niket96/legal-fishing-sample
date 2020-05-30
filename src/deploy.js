@@ -7,7 +7,7 @@ const seedData = require('../resources/seed.json')
 async function newDb() {
     let reqOptions = {
         method: 'POST',
-        url: `${config.ip}:${config.port}/fdb/new-db`,
+        url: `${config.ip}/fdb/new-db`,
         body: { 'db/id': `${config.network}/${config.db}` },
         json: true
     }
@@ -18,7 +18,7 @@ async function newDb() {
 async function dbSchema() {
     let reqOptions = {
         method: 'POST',
-        url: `${config.ip}:${config.port}/fdb/${config.network}/${config.db}/transact`,
+        url: `${config.ip}/fdb/${config.network}/${config.db}/transact`,
         body: schema,
         json: true
     }
@@ -29,7 +29,7 @@ async function dbSchema() {
 async function seed() {
     let reqOptions = {
         method: 'POST',
-        url: `${config.ip}:${config.port}/fdb/${config.network}/${config.db}/transact`,
+        url: `${config.ip}/fdb/${config.network}/${config.db}/transact`,
         body: seedData,
         json: true
     }
