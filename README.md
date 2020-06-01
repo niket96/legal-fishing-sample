@@ -14,7 +14,7 @@ Features demonstrated: zero knowledge proofs, data immutability, and traceabilit
 
 ![Legal Fishing App](public/zero-knowledge.gif)
 
-### Get Started with Fluree
+### Get Started
 
 1. `Start Fluree`
 
