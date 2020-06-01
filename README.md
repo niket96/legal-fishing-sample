@@ -1,4 +1,4 @@
-## Legal Fishing Zeeve readme
+## Legal Fishing Zeeve
 
 This Github repo demonstrates how one could set up a Fluree ledger to use zero-knowledge proofs.
 
